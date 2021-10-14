@@ -1,0 +1,6 @@
+#!/bin/bash
+
+($@&)
+#kill  $PPID #--> KO cause this is the bash pid and not the "xterm" pid
+pppid=`ps -p $PPID -o ppid=`
+kill $pppid

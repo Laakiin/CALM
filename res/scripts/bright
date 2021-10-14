@@ -1,0 +1,4 @@
+#!/bin/bash
+
+brightnessctl s 255 > .bright
+rm .bright

@@ -1,0 +1,7 @@
+#!/bin/bash
+sed -i '/feh/d' /home/anakinm/.config/i3/config && echo "exec --no-startup-id feh --bg-scale $1" >> /home/anakinm/.config/i3/config
+bash /home/anakinm/.config/polybar/shapes/scripts/pywal.sh $1
+($@&)
+#kill  $PPID #--> KO cause this is the bash pid and not the "xterm" pid
+pppid=`ps -p $PPID -o ppid=`
+kill $pppid
