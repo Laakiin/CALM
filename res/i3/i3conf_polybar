@@ -182,13 +182,13 @@ bindsym $mod+r mode "resize"
 #}
 
 
-exec --no-startup-id /home/anakinm/.config/polybar/shapes/launch.sh
+exec --no-startup-id ~/.config/polybar/shapes/launch.sh
 
 #bindsym $mod+Escape exec i3lock-fancy
 bindsym $mod+n exec thunar
 bindsym $mod+o exec firefox
 bindsym $mod+p exec flameshot gui
-bindsym $mod+Shift+o exec brightnessctl set 255
+
 
 # class                 border  bground text    indicator child_border
 client.focused          #B0BD95 #838D6F #FFFFFF #C6EBA6   #838D6F
@@ -199,8 +199,6 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 client.background       #FFFFFF
 
- 
-bindsym $mod+Shift+b exec --no-startup-id xrandr --output HDMI-A-0 --same-as eDP
-bindsym $mod+b exec --no-startup-id xrandr --output HDMI-A-0 --auto --right-of eDP
+
 bindsym $mod+Escape exec /home/anakinm/.i3/i3lock-fancy-multimonitor/lock
-exec --no-startup-id feh --bg-scale newbg.jpg
+
