@@ -8,8 +8,8 @@ sudo useradd -m -U $1
 sudo passwd $1
 sudo su - $1
 echo "Hello $1"
-echo "Installing i3wm"
-sudo pacman -S i3wm --noconfirm
+echo "Installing i3-wm"
+sudo pacman -S i3-wm --noconfirm
 if [ $? -eq 0 ];
 then
 	echo  "Do you want to install polybar?" 
@@ -19,7 +19,7 @@ then
 		[Nn]* ) cp res/i3/i3conf_nopolybar $homedir/.config/i3/config;;
 
 else
-	echo "Error while installing i3wm"
+	echo "Error while installing i3-wm"
 fi
 
 
