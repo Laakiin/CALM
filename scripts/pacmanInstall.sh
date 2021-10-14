@@ -2,7 +2,7 @@
 
 homedir="/home/$1"
 echo "Installing i3-wm"
-sudo pacman -S i3-wm --noconfirm
+sudo pacman -S i3-wm
 if [ $? -eq 0 ];
 then
 	echo  "Do you want to install polybar?" 
