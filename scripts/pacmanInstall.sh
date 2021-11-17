@@ -2,6 +2,7 @@
 
 homedir="/home/$1"
 cd $homedir
+mkdir .config/i3/
 echo "Installing i3-wm"
 sudo -S pacman -S i3-wm
 if [ $? -eq 0 ];
