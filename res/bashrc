@@ -107,9 +107,8 @@ export OSH=/home/anakinm/.oh-my-bash
 #bash /home/anakinm/.scripts/
 
 alias pacman="sudo pacman"
-alias bg="bash /home/anakinm/.scripts/bg"
-alias monip="bash /home/anakinm/.scripts/monip"
-alias dl="cd ~/Téléchargements"
+alias bg="bash ~/.scripts/bg"
+alias monip="bash ~/.scripts/monip"
 alias bashrc="vim ~/.bashrc"
 alias i3conf="vim ~/.config/i3/config"
-alias bright="bash /home/anakinm/.scripts/bright"
+alias bright="bash ~/.scripts/bright"
