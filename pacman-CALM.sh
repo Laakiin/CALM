@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[-n $1]]; then
+if [[ -n $1 ]]; then
     homedir="/home/$1"
     sudo useradd -m -U $1
     echo "Now you have to set a password for $1: "
