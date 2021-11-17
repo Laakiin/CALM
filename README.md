@@ -1,5 +1,5 @@
 # Comme À La Maison WIP
 
-En lançant l'executable, vim, i3(avec polybar), Oh-My-Bash(avec le theme custom) et les alias seront installés sur la machine, et ce sur un utilisateur entré en argument 1. (Il faut lancer avec les privilèges super utilisateurs)
+This script will install vim(with my conf), Oh-My-Bash (with a custom theme) and my bashrc will be copied in order to get my aliases. It will also create an user for you, you just have to put the name of the user as argument of the script.
 
-Il y a pour le moment 1 version: la version manjaro (avec pacman comme gestionnaire de paquets)
+For the moment, there's only one version: with pacman (And it's still work in progress) but later, there will be versions with others package managers.
