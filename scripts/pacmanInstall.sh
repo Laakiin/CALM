@@ -1,6 +1,7 @@
 #!/bin/bash
 
 homedir="/home/$1"
+cd $homedir
 echo "Installing i3-wm"
 sudo -S pacman -S i3-wm
 if [ $? -eq 0 ];
