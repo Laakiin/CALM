@@ -9,7 +9,7 @@ resdir="/usr/share/CALM/res"
 cd $homedir
 mkdir .config/i3/
 echo -e "\n${YEL}####Installing i3-wm####${NC}\n"
-sudo -S pacman -S i3-wm
+sudo -S pacman -S i3
 if [ $? -eq 0 ];
 then
     echo -e "\n${YEL}####Copying i3 config####\n" 
