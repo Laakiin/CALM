@@ -7,7 +7,7 @@ For the moment, there's only one version: with pacman but later, there will be v
 If you want to install it:
 
 ```shell
-git clone https://github.com/Laakiin/CALM.git && cd CALM && ./pacman-CALM.sh [username]
+git clone https://github.com/Laakiin/CALM.git && cd CALM && ./install.sh [username]
 ```
 
 # Credits to :
