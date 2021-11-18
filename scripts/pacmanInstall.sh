@@ -8,9 +8,9 @@ homedir="/home/$1"
 resdir="/usr/share/CALM/res"
 cd $homedir
 mkdir .config/i3/
-echo -e "\n${YEL}####Installing i3-wm####${NC}\n
-(If you don't know what you have to type, type '2,5')\n"
-sudo -S pacman -S i3
+echo -e "\n${YEL}####Installing i3, xtrlock, flameshot, firefox, thunar, tilix####\n
+####(If you don't know what you have to type, type '2,5')####${NC}\n"
+sudo -S pacman -Syu i3 xtrlock tilix flameshot thunar firefox
 if [ $? -eq 0 ];
 then
     echo -e "\n${YEL}####Copying i3 config####\n" 
@@ -25,6 +25,8 @@ then
     sudo -S cp -r $resdir/ohmybash/brainy_alt $homedir/.oh-my-bash/themes/
     echo -e "\n${YEL}####Copying scripts directory####\n"
     sudo -S cp -r $resdir/scripts $homedir/.scripts
+    echo -e "\n${YEL}####Rights adjustment####\n"
+    sudo chmod u+rw .bashrc .scripts/* .config/i3/config
 else
-	echo -e "\n${RED}####Error while installing i3-wm####\n"
+	echo -e "\n${RED}####Error while installing i3, xtrlock, firefox, flameshot tilix####\n"
 fi
