@@ -32,8 +32,7 @@ then
     git clone https://github.com/GlaconBleu/config_vim.git ~/.config_vim
     ln -s .config_vim .vim
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    su - $1
-    echo -e "\n${BLU}####Now, you have to start vim with 'vim' ####\n
+    echo -e "\n${BLU}####Now, you have to connect to your new session(with i3) start vim with 'vim' ####\n
 then you type: 'VundleInstall'.\n
 You wait that the installation finishes, and finally you can leave vim with ':q!'\n${NC}"
 
