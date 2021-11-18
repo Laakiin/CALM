@@ -4,6 +4,9 @@ This script will install vim(with my conf), Oh-My-Bash (with a custom theme) and
 
 For the moment, there's only one version: with pacman but later, there will be versions with others package managers.
 
-Credits to: 
-  -@SebDruon for the vim config 
-  -@matheusramos for Oh My Bash
+# Credits to :
+
+- SebDruon for the vim config
+- matheusramos for Oh-My-Bash
+
+You can find them on Github
