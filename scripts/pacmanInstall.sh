@@ -10,7 +10,7 @@ resdir="/usr/share/CALM/res"
 cd $homedir
 mkdir .config/i3/
 echo -e "\n${YEL}####Installing i3, xtrlock, flameshot, firefox, vim, thunar, tilix####\n
-####(If you don't know what you have to type, type '2,5')####${NC}\n"
+${BLU}####(If you don't know what you have to type, type '2,5')####${NC}\n"
 sudo -S pacman -Syu i3 xtrlock tilix flameshot thunar firefox vim
 if [ $? -eq 0 ];
 then
@@ -32,9 +32,10 @@ then
     git clone https://github.com/GlaconBleu/config_vim.git ~/.config_vim
     ln -s .config_vim .vim
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    su - $1
     echo -e "\n${BLU}####Now, you have to start vim with 'vim' ####\n
 then you type: 'VundleInstall'.\n
-    You wait that the installation finishes, and finally you can leave vim with ':q!'\n${NC}"
+You wait that the installation finishes, and finally you can leave vim with ':q!'\n${NC}"
 
 else
 	echo -e "\n${RED}####Error while installing i3, xtrlock, firefox, vim, flameshot tilix####\n"
