@@ -1,5 +1,5 @@
 # Path to your oh-my-bash installation.
-export OSH=/home/anakinm/.oh-my-bash
+export OSH=~/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -101,10 +101,10 @@ source $OSH/oh-my-bash.sh
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 # Path to your oh-my-bash installation.
-export OSH=/home/anakinm/.oh-my-bash
+export OSH=~/.oh-my-bash
 
-#Pour chemin scripts:
-#bash /home/anakinm/.scripts/
+#Script directory:
+#bash ~/.scripts/
 
 alias pacman="sudo pacman"
 alias bg="bash ~/.scripts/bg"
