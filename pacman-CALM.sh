@@ -2,14 +2,14 @@
 
 YEL='\033[1;33m'
 RED='\033[0;31m'
-
+NC='\033[0m'
 
 if [[ -n $1 ]]; then
     homedir="/home/$1"
     sudo useradd -m -U $1
     echo -e "\n${YEL}Now you have to set a password for $1: \n"
     sudo passwd $1
-    echo -e "\n${YEL}Adding $1 to sudoers\n"
+    echo -e "\n${YEL}Adding $1 to sudoers${NC}\n"
     sudo usermod -aG wheel $1
     echo -e "\n${YEL}Creating and moving res file to /usr/share/CALM\n"
     sudo mkdir /usr/share/CALM
