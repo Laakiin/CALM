@@ -5,23 +5,23 @@ os=$(cat /etc/*release | grep "PRETTY_NAME" | cut -d'=' -f2)
 case $os in
 
     *"Manjaro"*)
-        echo "Manjaro!";;
+        echo "manjaro";;
 
     *"Ubuntu"*)
-        echo "Ubuntu";;
+        echo "ubuntu";;
 
     *"CentOs"*)
-        echo "CentOs!";;
+        echo "centos";;
 
     *"Fedora"*)
-        echo "Fedora!";;
+        echo "fedora";;
 
     *"Mint"*)
-        echo "Linux Mint!";;
+        echo "mint";;
 
     *"Debian"*)
-        echo "Debian!";;
+        echo "debian";;
 
     *)
-        echo "Unknown :(";;
+        echo "na";;
 esac
