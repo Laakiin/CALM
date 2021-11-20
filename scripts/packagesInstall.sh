@@ -8,7 +8,7 @@ NC='\033[0m'
 homedir="/home/$1"
 resdir="/usr/share/CALM/res"
 cd $homedir
-sudo mkdir .config/i3
+sudo -S mkdir .config/i3
 echo -e "\n${YEL}####Installing i3, xtrlock, flameshot, firefox, vim, thunar, tilix####${NC}\n"
 
 case $2 in
@@ -37,7 +37,7 @@ then
     echo -e "\n${YEL}####Copying scripts directory####\n"
     sudo -S cp -r $resdir/scripts $homedir/.scripts
     echo -e "\n${YEL}####Rights adjustment####\n"
-    sudo chmod u+rw .bashrc .scripts/* .config/i3/config
+    sudo -S chmod u+rw .bashrc .scripts/* .config/i3/config
     echo -e "\n${YEL}####Installing SebDruon's vim config####\n"
     git clone https://github.com/GlaconBleu/config_vim.git ~/.config_vim
     ln -s .config_vim .vim
