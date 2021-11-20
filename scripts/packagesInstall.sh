@@ -14,11 +14,11 @@ echo -e "\n${YEL}####Installing i3, xtrlock, flameshot, firefox, vim, thunar, ti
 case $2 in
 
     "pacman")
-        sudo -S pacman -Syu i3 xtrlock tilix flameshot thunar firefox vim;;
+        sudo -S pacman -Syu curl i3 xtrlock tilix flameshot thunar firefox vim;;
 
     "apt")
         sudo -S apt update
-        sudo -S apt install i3 xtrlock tilix flameshot thunar firefox vim ;;
+        sudo -S apt install curl i3 xtrlock tilix flameshot thunar firefox vim ;;
 
 esac
 
