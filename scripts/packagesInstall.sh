@@ -8,7 +8,7 @@ NC='\033[0m'
 homedir="/home/$1"
 resdir="/usr/share/CALM/res"
 cd $homedir
-mkdir .config/i3/
+sudo mkdir .config/i3
 echo -e "\n${YEL}####Installing i3, xtrlock, flameshot, firefox, vim, thunar, tilix####${NC}\n"
 
 case $2 in
