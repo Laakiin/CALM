@@ -9,9 +9,19 @@ homedir="/home/$1"
 resdir="/usr/share/CALM/res"
 cd $homedir
 mkdir .config/i3/
-echo -e "\n${YEL}####Installing i3, xtrlock, flameshot, firefox, vim, thunar, tilix####\n
-${BLU}####(If you don't know what you have to type, type '2,5')####${NC}\n"
-sudo -S pacman -Syu i3 xtrlock tilix flameshot thunar firefox vim
+echo -e "\n${YEL}####Installing i3, xtrlock, flameshot, firefox, vim, thunar, tilix####${NC}\n"
+
+case $2 in
+
+    "pacman")
+        sudo -S pacman -Syu i3 xtrlock tilix flameshot thunar firefox vim;;
+
+    "apt")
+        sudo -S apt update
+        sudo -S apt install i3 xtrlock tilix flameshot thunar firefox vim ;;
+
+esac
+
 if [ $? -eq 0 ];
 then
     echo -e "\n${YEL}####Copying i3 config####\n" 
