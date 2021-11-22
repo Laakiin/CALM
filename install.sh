@@ -47,7 +47,7 @@ if [[ -n $1 ]]; then
     echo -e "\n${YEL}Creating and moving res file to /usr/share/CALM\n"
     sudo mkdir /usr/share/CALM
     sudo mv ./res /usr/share/CALM/res/
-    echo -e "\n${YEL}Launching the installation\n"
+    echo -e "\n${YEL}Installing...\n"
     sudo su $1 -c "bash scripts/packagesInstall.sh $1 $PKG"
 else
     echo -e "\n${RED}You have to set the username of your new accout as an argument!\n"

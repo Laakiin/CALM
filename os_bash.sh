@@ -10,11 +10,11 @@ case $os in
     *"Ubuntu"*)
         echo "ubuntu";;
 
-    *"CentOs"*)
+    *"CentOS"*)
         echo "centos";;
 
     *"Fedora"*)
-        echo "fedora";;
+        echo "fedora"
 
     *"Mint"*)
         echo "mint";;
