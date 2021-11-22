@@ -23,6 +23,10 @@ case $2 in
     "dnf")
         sudo -S dnf update
         sudo -S dnf install curl i3 xtrlock tilix flameshot thunar firefox vim;;
+    
+    "yum")
+        sudo -S yum update
+        sudo -S yum install curl i3 xtrlock tilix flameshot thunar firefox vim;;
 
 esac
 
