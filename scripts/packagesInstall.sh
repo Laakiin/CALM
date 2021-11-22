@@ -18,7 +18,11 @@ case $2 in
 
     "apt")
         sudo -S apt update
-        sudo -S apt install curl i3 xtrlock tilix flameshot thunar firefox vim ;;
+        sudo -S apt install curl i3 xtrlock tilix flameshot thunar firefox vim;;
+
+    "dnf")
+        sudo -S dnf update
+        sudo -S dnf install curl i3 xtrlock tilix flameshot thunar firefox vim;;
 
 esac
 
@@ -27,7 +31,6 @@ then
     echo -e "\n${YEL}####Copying i3 config####\n" 
 	sudo -S cp $resdir/i3/i3conf $homedir/.config/i3/config
     echo -e "\n${YEL}####Installing oh-my-bash####\n"
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/Laakiin/CALM/main/res/ohmybash/omb_install.sh)"
     echo -e "\n${YEL}####Deleting .bashrc####\n"
     rm $homedir/.bashrc
     echo -e "\n${YEL}####Copying the new .bashrc####\n"
