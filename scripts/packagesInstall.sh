@@ -47,5 +47,5 @@ then
     sudo -S chmod u+rw .bashrc .scripts/* .config/i3/config
 
 else
-	echo -e "\n${RED}####Error while installing i3, xtrlock, firefox, vim, thunar, flameshot or tilix####\n"
+	echo -e "\n${RED}####Error while installing i3, xtrlock, firefox, vim, thunar, flameshot or tilix####${NC}\n"
 fi

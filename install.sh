@@ -14,11 +14,15 @@ case $DISTRO in
 
     "fedora")
         SUDO="wheel"
-        PKG="dnf";;
+        PKG="dnf"
+        echo "Sorry, $PKG is not supported yet"
+        exit;;
     
     "centos")
         SUDO="wheel"
-        PKG="yum";;
+        PKG="yum"
+        echo "Sorry, $PKG is not supported yet"
+        exit;;
 
     "ubuntu")
         SUDO="sudo"
