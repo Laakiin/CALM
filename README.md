@@ -12,7 +12,6 @@ git clone https://github.com/Laakiin/CALM.git && cd CALM && ./install.sh [userna
 
 # Credits to :
 
-- SebDruon for the vim config
 - matheusramos for Oh-My-Bash
 
-You can find them on Github
+You can find him on Github
