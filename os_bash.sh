@@ -14,7 +14,7 @@ case $os in
         echo "centos";;
 
     *"Fedora"*)
-        echo "fedora"
+        echo "fedora";;
 
     *"Mint"*)
         echo "mint";;
