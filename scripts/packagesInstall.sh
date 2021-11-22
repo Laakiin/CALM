@@ -38,14 +38,7 @@ then
     sudo -S cp -r $resdir/scripts $homedir/.scripts
     echo -e "\n${YEL}####Rights adjustment####\n"
     sudo -S chmod u+rw .bashrc .scripts/* .config/i3/config
-    echo -e "\n${YEL}####Installing SebDruon's vim config####\n"
-    git clone https://github.com/GlaconBleu/config_vim.git ~/.config_vim
-    ln -s .config_vim .vim
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    echo -e "\n${BLU}####Now, you have to connect to your new session(with i3) start vim with 'vim' ####\n
-then you type: 'VundleInstall'.\n
-You wait that the installation finishes, and finally you can leave vim with ':q!'\n${NC}"
 
 else
-	echo -e "\n${RED}####Error while installing i3, xtrlock, firefox, vim, flameshot tilix####\n"
+	echo -e "\n${RED}####Error while installing i3, xtrlock, firefox, vim, thunar, flameshot or tilix####\n"
 fi
