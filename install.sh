@@ -46,22 +46,23 @@ case $DISTRO in
 esac
 
 if [[ -n $1 ]]; then
-    if [[ "$PKG" == "apt" ]] || [[ "$PKG" == "pacman" ]]; then
-        homedir="/home/$1"
+    homedir="/home/$1"
+    if [[ "$PKG" == "apt" ]]; then
+        sudo adduser $1
+    if [[ "$PKG" == "pacman" ]]; then
         sudo useradd -m -U $1
         echo -e "\n${YEL}Now you have to set a password for $1: \n"
         sudo passwd $1
-        echo -e "\n${YEL}Adding $1 to sudoers${NC}\n"
-        sudo usermod -aG $SUDO $1
-        echo -e "\n${YEL}Creating and moving res file to /usr/share/CALM\n"
-        sudo mkdir /usr/share/CALM
-        sudo mv ./res /usr/share/CALM/res/
-        echo -e "\n${YEL}Installing...\n"
-        sudo su $1 -c "bash scripts/packagesInstall.sh $1 $PKG"
-
     else
         echo -e "\n${RED}Your package manager is not supported! \n"
     fi
+    echo -e "\n${YEL}Adding $1 to sudoers${NC}\n"
+    sudo usermod -aG $SUDO $1
+    echo -e "\n${YEL}Creating and moving res file to /usr/share/CALM\n"
+    sudo mkdir /usr/share/CALM
+    sudo mv ./res /usr/share/CALM/res/
+    echo -e "\n${YEL}Installing...\n"
+    sudo su $1 -c "bash scripts/packagesInstall.sh $1 $PKG"
 else
     echo -e "\n${RED}You have to set the username of your new accout as an argument!\n"
 fi
