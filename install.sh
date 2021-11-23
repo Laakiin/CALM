@@ -47,9 +47,11 @@ esac
 
 if [[ -n $1 ]]; then
     homedir="/home/$1"
-    if [[ "$PKG" == "apt" ]]; then
+    if [[ "$PKG" == "apt" ]]
+    then
         sudo adduser $1
-    elseif [[ "$PKG" == "pacman" ]]; then
+    elseif [[ "$PKG" == "pacman" ]]
+    then
         sudo useradd -m -U $1
         echo -e "\n${YEL}Now you have to set a password for $1: \n"
         sudo passwd $1
