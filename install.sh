@@ -50,7 +50,7 @@ if [[ -n $1 ]]; then
     if [[ "$PKG" == "apt" ]]
     then
         sudo adduser $1
-    elseif [[ "$PKG" == "pacman" ]]
+    elif [[ "$PKG" == "pacman" ]]
     then
         sudo useradd -m -U $1
         echo -e "\n${YEL}Now you have to set a password for $1: \n"
