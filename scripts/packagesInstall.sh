@@ -14,7 +14,7 @@ echo -e "\n${YEL}####Installing i3, xtrlock, flameshot, firefox, vim, thunar, ti
 case $2 in
 
     "pacman")
-        sudo -S pacman -Sy curl i3 xtrlock tilix flameshot thunar firefox vim;;
+        sudo -S pacman -Sy curl i3-wm i3-status xtrlock tilix flameshot thunar firefox vim;;
 
     "apt")
         sudo -S apt update
@@ -38,6 +38,7 @@ then
     sudo -S cp -r $resdir/scripts $homedir/.scripts
     echo -e "\n${YEL}####Rights adjustment####\n"
     sudo -S chmod u+rw .bashrc .scripts/* .config/i3/config
+    cat $resdir/introduction
 
 else
 	echo -e "\n${RED}####Error while installing i3, xtrlock, firefox, vim, thunar, flameshot or tilix####${NC}\n"

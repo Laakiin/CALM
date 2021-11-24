@@ -1,5 +1,7 @@
 #!/bin/bash
 
-monip=$(ip a | sed -n 9p | cut -d " " -f 6)
-echo "Ip locale: $monip"
+iploc=$(ip a | sed -n 9p | cut -d " " -f 6 | cut -d "/" -f 1)
+ippub=$(wget -qO- ifconfig.me)
+echo "Local IP: 	$iploc"
+echo "Public IP: 	$ippub"
 

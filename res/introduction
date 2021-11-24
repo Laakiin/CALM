@@ -1,0 +1,44 @@
+#####################################################################
+Congrats, you can enjoy my configuration!
+Now I will talk about shortcuts and scripts that were added:
+
+----Scripts----
+
+In /home/[username]/.scripts you will find:
+
+bg      -> You can set a new background by executing it with your background as an argument
+           Ex: bg.sh wallpaper.jpg
+
+bright  -> You can simply set your screen brightness at 100% by simply executing it (Only for laptops)
+
+monip   -> It will show you your local and public IP by executing it.
+
+
+----Aliases----
+
+pacman  -> (For manjaro) Will automatically put 'sudo' before.
+
+bg      -> Will execute bg script
+
+myip    -> Will execute monip script
+
+bashrc  -> Will open ~/.bashrc in vim
+
+i3conf  -> Will open ~/.scripts/config in vim
+
+bright  -> Will execute bright script
+
+
+---Shortcuts---
+
+mod4+Escape     -> Lock your screen
+
+mod4+n          -> Open thunar file manager
+
+mod4+o          -> Open firefox
+
+mod4+p          -> Will open flameshot gui in order to screenshot (lightshot-like)
+
+mod4+Return     -> Open tilix
+
+mod4+BackSpace  -> Kill current window
